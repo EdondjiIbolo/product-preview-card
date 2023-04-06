@@ -11,6 +11,9 @@
 --Very-dark-blue: hsl(212, 21%, 14%);
 --Dark-grayish-blue: hsl(228, 12%, 48%);
 --White: hsl(0, 0%, 100%);
+--ff-family:'Fraunces', serif;
+--ff-family2:'Montserrat', sans-serif;
+
 }
 
 
@@ -27,13 +30,14 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    font-family: var(--ff-family);
 }
 .article{
     display: flex;
     max-width: 700px;
     margin-inline:auto;
     display: flex;
-    height: 480px;
+    height: 500px;
     gap:30px;
     background-color: var(--White);
     border-radius: 20px;
@@ -62,6 +66,7 @@ body{
     font-size: .9rem;
     letter-spacing: 5px;
     color:  var(--Very-dark-blue);
+    font-family: var(--ff-family2);
 }
 .text__title{
     display: block;
@@ -73,10 +78,10 @@ body{
 }
 .text__description{
     font-size: 1.2rem;
-
     line-height: 1.5;
     color: var(--Dark-grayish-blue);
     margin-bottom: 0;
+    font-family: var(--ff-family2);
 }
 .article__price{
     display: flex;
@@ -84,9 +89,6 @@ body{
     gap:30px;
     margin-top: 10px ;
     margin-bottom: 15px;
-}
-.price{
-    
 }
 .price--big{
     font-size: 2.1rem;
@@ -97,7 +99,8 @@ body{
 }
 .price--small{
     font-size: 1.1rem;
-    text-decoration: line-through
+    text-decoration: line-through;
+    font-family: var(--ff-family2);
 }
 .button{
     text-decoration: none;
@@ -125,16 +128,15 @@ body{
     margin: 0;
     font-size: 1.05rem
 }
-@media screen and (max-width:375px){
+@media screen and (max-width:376px){
     body{
-        padding: 15px;
+        padding: 25px 15px;
         display: block;
-
+        height: 100%;
     }
     .article{
         flex-direction: column;
-        margin-bottom: 30px;
-        height: 780px ;
+        height: 800px ;
         gap:10px;
         border-radius: 10px;
 
@@ -149,7 +151,6 @@ body{
         height: 100%;
         width: 100%;
         object-fit:cover;
-  
     }
 
     .article__description{
